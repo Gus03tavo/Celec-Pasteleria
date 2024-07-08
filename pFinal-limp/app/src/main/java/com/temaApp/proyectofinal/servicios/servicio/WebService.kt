@@ -9,6 +9,7 @@ import com.temaApp.proyectofinal.servicios.entidad.Producto
 import com.temaApp.proyectofinal.servicios.entidad.ProductoDtoGet
 import com.temaApp.proyectofinal.servicios.entidad.Usuario
 import com.temaApp.proyectofinal.servicios.entidad.UsuarioDTOActu
+import com.temaApp.proyectofinal.servicios.entidad.UsuarioDTOChangeContra
 import com.temaApp.proyectofinal.servicios.entidad.UsuarioDto
 import com.temaApp.proyectofinal.servicios.entidad.VentaRequest
 import okhttp3.MultipartBody
@@ -97,6 +98,11 @@ interface WebService {
         @Path("usu_id") usu_id: Int,
         @Path("pro_nombre") pro_nombre: String
     ): Response<JsonElement>
+
+    @PUT("/changePass")
+    suspend fun changePassword(
+        @Body changePass:UsuarioDTOChangeContra
+    ): Response<CreateProductResponse>
 
     @GET("/carritoTotal/{usu_id}")
     suspend fun getCarritoTotal(@Path("usu_id") userId: Int): Response<CarritoTotalResponse>
