@@ -10,7 +10,6 @@ La propuesta consiste en desarrollar una aplicación móvil para la pastelería 
 - **Pedidos en Línea**: Los clientes pueden seleccionar productos y realizar pedidos directamente desde la aplicación.
 - **Gestión de Productos**: Los administradores tienen la capacidad de agregar, editar y eliminar productos del catálogo.
 - **Autenticación de Usuarios**: Funcionalidad de registro e inicio de sesión para clientes y administradores.
-- **Notificaciones**: Los clientes reciben notificaciones sobre el estado de sus pedidos.
 - **Interfaz Amigable**: Diseño intuitivo y fácil de usar tanto para clientes como para administradores.
 
 ## Requisitos
