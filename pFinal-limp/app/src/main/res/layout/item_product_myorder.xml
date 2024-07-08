@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="30dp"
+    android:outlineSpotShadowColor="@color/login"
+
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgOrden"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+           />
+
+        <TextView
+            android:id="@+id/nameOrden"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Cheese\nCupcake"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="170dp"
+        android:text="S/.25.00"
+        android:textColor="#B5AFAF"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:text="0"
+        android:layout_marginTop="110dp"
+        android:textColor="#B5AFAF"
+        android:textSize="15dp"/>
+
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/botoneshape"
+        android:onClick="onAddClick"
+        android:paddingTop="2dp"
+        android:text="Eliminar"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        app:backgroundTint="@null" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

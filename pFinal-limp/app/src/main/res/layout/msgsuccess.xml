@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="287dp"
+    android:layout_height="189dp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success!"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prepararemos tu pedido pronto"
+            android:layout_gravity="center_horizontal"
+
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_ver_orden"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ver orden"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/login"
+            android:fontFamily="@font/zenoldmincho"
+            />
+
+        <Button
+            android:id="@+id/btn_continuar_compra"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Continuar comprando"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/info"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/admin"
+            android:fontFamily="@font/zenoldmincho"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

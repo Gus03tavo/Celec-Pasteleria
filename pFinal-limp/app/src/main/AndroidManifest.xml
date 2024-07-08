@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoFinal"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".compra.CheckOut"
+            android:exported="false" />
+
+        <activity
+            android:name=".compra.MetodoPago"
+            android:exported="false" />
+
+        <activity
+            android:name=".compra.carrito.Cart"
+            android:exported="true" />
+
+        <activity
+            android:name=".compra.ActivityMap"
+            android:exported="false" />
+        <activity
+            android:name=".adminSection.productsDB.CrearProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminSection.DashAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".autenticacion.LoginAdmin"
+            android:exported="false"/>
+        <activity
+            android:name=".clienteSection.profileDetails.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.miInbox.MiInbox"
+            android:exported="false" />
+        <activity
+            android:name=".store.productoSelected.ProductoSelected"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.historialpedidos.Historial"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.Policy"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.Terms"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.RecuCliente"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.CrearCliente"
+            android:exported="false" />
+        <activity
+            android:name=".clienteSection.DetalleCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".autenticacion.LoginCliente"
+            android:exported="false" />
+        <activity
+            android:name=".adminSection.viewProducts.ViewProducts"
+            android:exported="false" />
+        <activity
+            android:name=".adminSection.productsDB.DeleteProduct"
+            android:exported="false" />
+        <activity
+            android:name=".adminSection.productsDB.ModifyProduct"
+            android:exported="false" />
+        <activity
+            android:name=".store.Store"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
+

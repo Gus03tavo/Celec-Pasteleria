@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:outlineSpotShadowColor="@color/shadow"
+    android:layout_marginLeft="50dp"
+    android:background="@drawable/bordercolor2"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="20dp">
+
+
+    <TextView
+
+        android:id="@+id/boxComentario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bordercolor2"
+        android:paddingHorizontal="20dp"
+        android:text="\nHa pagado correctamente su pedido\nORN-100001, ¡le entregaremos pronto! compruebe su \nbandeja de entrada para más información"
+        android:textColor="@color/black"
+
+
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/boxFecha"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="10dp"
+        android:text="22/06/2023 10:37 AM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.cardview.widget.CardView>

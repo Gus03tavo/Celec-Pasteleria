@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="precio_formato">S/. %.2f</string>
+
+    <string name="app_name">proyectoFinal</string>
+    <string-array name="spinner_items">
+        <item>Cupcakes</item>
+        <item>Postres</item>
+        <item>Panes</item>
+        <item>Otros</item>
+    </string-array>
+
+
+    <string
+        name="map_api_key"
+        translatable="false"
+        templateMergeStratedy="preserve">AIzaSyCqrXXg-CdAknUZG3MzgMF2Bnh3FczNGZs
+    </string>
+</resources>
